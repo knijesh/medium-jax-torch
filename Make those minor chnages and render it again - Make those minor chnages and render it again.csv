@@ -1,0 +1,6 @@
+Feature,PyTorch,JAX
+Execution Model,"Dynamic, Define-by-Run","Static, Functional, XLA-Compiled"
+Control Flow,Native Python control flow (easy debugging),Functional constructs (jax.lax.cond)
+Performance,Excellent via torch.compile,Excellent via XLA (especially TPUs)
+Parallelism,"torch.distributed, High-level frameworks (DeepSpeed, Lightning)","Transformation Combinators (jit,vmap,pmap)"
+Ecosystem,"Mature, Production-focused, Broad domain coverage (undergoing consolidation)","Younger, Research-oriented, Composable (Flax, Haiku, Optax)"
